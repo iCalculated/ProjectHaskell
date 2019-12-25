@@ -1,0 +1,1 @@
+main = print $ let fibs = 0 : 1 : zipWith (+) fibs (tail fibs) in sum [x | x <- (takeWhile (<4000000) fibs), even x]
